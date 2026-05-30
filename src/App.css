@@ -1,0 +1,152 @@
+@import "tailwindcss";
+/* App.css */
+
+@keyframes shooting-star {
+    0% {
+        transform: translate3d(0, 0, 0) rotate(-35deg) scaleY(0.2);
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0) rotate(-35deg) scaleY(1);
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    100% {
+        /* Move left → right and top → bottom */
+        transform: translate3d(250px, 250px, 0) rotate(-35deg) scaleY(0.2);
+        opacity: 0;
+    }
+}
+
+.animate-shooting-star {
+    animation-name: shooting-star;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    will-change: transform, opacity;
+}
+
+/* App.css */
+
+@keyframes binary-rain {
+    0% {
+        transform: translate3d(-30px, -100%, 0);
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    50% {
+        /* Drift toward the right while falling */
+        transform: translate3d(0px, 0%, 0);
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        /* End slightly to the right */
+        transform: translate3d(50px, 120%, 0);
+        opacity: 0;
+    }
+}
+
+.animate-binary-rain {
+    animation-name: binary-rain;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    will-change: transform, opacity;
+}
+
+
+/* App.css */
+
+@keyframes float-keyword {
+    0% {
+        transform: translate3d(0, 20px, 0);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate3d(10px, -10px, 0);
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate3d(-10px, -40px, 0);
+        opacity: 0;
+    }
+}
+
+.animate-float-keyword {
+    animation-name: float-keyword;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    will-change: transform, opacity;
+}
+
+/* App.css */
+
+@keyframes grid-pan {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(40px, 40px);
+    }
+}
+
+.animate-grid-pan {
+    animation: grid-pan 20s linear infinite;
+}
+
+.wave-text {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.wave-text span {
+    display: inline-block;
+    animation: waveMove 2.2s ease-in-out infinite;
+}
+
+@keyframes waveMove {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(-6px) rotate(-2deg);
+    }
+
+    50% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    75% {
+        transform: translateY(6px) rotate(2deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}

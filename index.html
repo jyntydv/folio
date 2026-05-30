@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jayant</title>
+    
+    <script>
+      const titles = [
+        "Jayant Yadav",
+        "Jayant - Full Stack Developer",
+        "Jayant - Portfolio",
+        "JY"
+      ];
+
+      let index = 0;
+      function rotateTitle() {
+        document.title = titles[index];
+        index = (index + 1) % titles.length;
+      }
+
+      setInterval(rotateTitle, 3000);
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="64" fill="#1A1A1A" />
+
+  <!-- Initials JY in bold monospace -->
+  <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" font-family="Monaco, monospace" font-size="48" fill="#FFFFFF" font-weight="bold">
+    JY
+  </text>
+
+  <!-- Small code brackets around -->
+  <path d="M20 40 L30 64 L20 88" stroke="#7FDBFF" stroke-width="4" fill="none" />
+  <path d="M108 40 L98 64 L108 88" stroke="#7FDBFF" stroke-width="4" fill="none" />
+</svg>
