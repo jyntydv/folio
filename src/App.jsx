@@ -3,6 +3,7 @@ import { Footer, Header } from "./components/index";
 import { Outlet } from "react-router-dom";
 import ShootingStars from "./components/features/ShootingStars";
 import BinaryRain from "./components/features/BinaryRain";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         </main>
         <Footer />
       </div>
+
+      {/* vercel analytics */}
+      <Analytics />
     </div>
   );
 }
